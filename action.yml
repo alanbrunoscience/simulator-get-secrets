@@ -12,5 +12,10 @@ runs:
   steps:
     - name: Print Inputs
       run: |
-        echo ${{ inputs.secret-ids }}
+        echo ${{ inputs.secret-ids }} > test.txt
+      shell: bash
+
+    - name: Print Inputs
+      run: |
+        cat test.txt
       shell: bash
