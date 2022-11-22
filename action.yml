@@ -11,7 +11,12 @@ runs:
   using: "composite"
   steps:
     - name: Print Inputs
+      env:
+        INPUTS: ${{ inputs.secret-ids }}
+      run: echo "$INPUTS" > test.txt
+      shell: bash
+
+    - name: Print Inputs 2
       run: |
-        echo "${{ inputs.secret-ids }}" > test.txt
-      # cat test.txt
+        cat test.txt
       shell: bash
