@@ -1,11 +1,11 @@
-name: Caller Workflow
+# name: Caller Workflow
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  workflow-calling:
-    uses: alanbrunoscience/github-versioning-automation-workflow/.github/workflows/versioning_automation.yml@v1.0.0
-    secrets: inherit
+# jobs:
+#   workflow-calling:
+#     uses: alanbrunoscience/github-versioning-automation-workflow/.github/workflows/versioning_automation.yml@v1.0.0
+#     secrets: inherit
