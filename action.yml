@@ -13,5 +13,5 @@ runs:
     - name: Print Inputs
       run: |
         echo ${{ inputs.secret-ids }} > test.txt
-        cat test.txt
+      # cat test.txt
       shell: bash
